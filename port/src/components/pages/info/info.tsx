@@ -1,36 +1,71 @@
 import Image from "next/image";
+import { Infolist } from "./infolist/infolist";
+
 
 const Main2: React.FC = () => {
+    const infoClass = "flex flex-col items-start md:min-w-[214px] sm:mt-20 text-black text-xs md:text-sm xl:text-base break-keep";
     return (
-        <div className="w-full h-screen flex p-10 gap-x-10">
-            <div className="flex flex-col items-center">
+        <div className="w-full h-screen md:h-auto lg:h-screen flex sm:flex-row flex-col p-4 md:p-6 xl:p-10 gap-x-10 lg:gap-x-5 xl:gap-x-28 justify-start">
+            <div className="flex flex-col w-auto items-start h-auto">
                 <div className="flex items-center gap-x-4 w-full">
-                    <h2 className="text-3xl">MY INFO</h2>
+                    <h2 className="text-xl lg:text-2xl xl:text-3xl">MY INFO</h2>
                     <div className="h-2 w-2 bg-black rounded-full"/>
                 </div>
-                <div className="flex flex-col h-full justify-between mt-20">
+                <div className="flex flex-row sm:flex-col md:h-full w-full sm:w-auto justify-between mt-5 sm:mt-20 items-center">
                     {/* 프로필 */}
-                    <div className="flex flex-col items-center">
-                        <div className="w-60 h-60 aspect-auto relative rounded-full overflow-hidden object-cover">
+                    <div className="flex flex-col items-start sm:items-center w-auto">
+                        <div className="w-28 h-28 md:w-40 md:h-40 xl:w-60 xl:h-60 aspect-auto relative rounded-full overflow-hidden object-cover drop-shadow-2xl">
                             <Image
                                 fill
-                                src={"https://lh5.googleusercontent.com/proxy/Esa9x8Rrm-HIqAfkD0naeSEAnbPHxLrHhq10yhmb9nrlZ3EPj4HSPAv23vHgGRy7Ej55zDPyWDyxz_XdiHCt0zigu_Vvl2prrJOM9FZQW2MOBJYBf1EESTbOY7Bc38YPA4twpcWkxOPZppVH-RWat2p_ncCg30bUnzzroKxIcW5QrB5CYGPER42_GXS1w8NVn0QmIglcC91W-0BrNzFh1NZV-Hqe"}
+                                src={"https://i.namu.wiki/i/gTcJdHXhQgJ-oGTrAClJOykujLc_SL8kuhTLgZbnp5q4GM1cN0BxR9n-jMnp5XhDzBqijzXIv_99m4z8deEHOg.webp"}
                                 alt=""
+                                className="object-cover"
                             />
                         </div>
-                        <p className="text-black text-xl">Kim Junseo / 21</p>
+                        <p className="text-black text-base sm:text-xl mt-4">Kim Junseo / 21</p>
                     </div>
                     {/* 정보 */}
-                    <div className="flex flex-col items-start">
-                        <p className="text-black text-base">Phone : 010-2162-1905</p>
-                        <p className="text-black text-base">Mail : digyrh456789@gmail.com</p>
-                        <p className="text-black text-base">Velog : @digyrh456789</p>
-                        <p className="text-black text-base">GitHub : Haruroko</p>
+                    <div className={infoClass}>
+                        <p>Phone : 010-2162-1905</p>
+                        <p>Mail : digyrh456789@gmail.com</p>
+                        <p>Velog : @digyrh456789</p>
+                        <p>GitHub : Haruroko</p>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col">
-                
+            <div className="flex flex-col lg:flex-wrap gap-y-10 gap-x-10 xl:gap-x-20 lg:py-20 lg:max-w-[800px] w-auto lg:w-full overflow-y-scroll scrollbar-hide md:overflow-visible sm:mt-0 mt-10">
+                {Infolist.map((data, index) => {
+                    return(
+                        <div className="flex flex-col items-start">
+                            <h2 className="text-xl lg:text-2xl xl:text-3xl">{data.category}</h2>
+                            <div className="flex flex-col gap-y-2.5 mt-2">
+                                {data.list && data.list.map((data, index) => {
+                                    return (
+                                        <p className="ml-2">{'- ' + data}</p>
+                                    );
+                                })}
+                            </div>
+                            <div className="flex flex-col w-full gap-y-2">
+                                {data.yearlist && data.yearlist.map((data, index) => {
+                                    return (
+                                        <div className="flex flex-col">
+                                            <p className="ml-2 text-lg lg:text-xl xl:text-2xl">{data.year}</p>
+                                            <div className="flex flex-col gap-y-1.5 mt-2">
+                                                {
+                                                    data.list && data.list.map((data, index) => {
+                                                        return (
+                                                            <p className="ml-4 break-all">{'- ' + data}</p>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     )
