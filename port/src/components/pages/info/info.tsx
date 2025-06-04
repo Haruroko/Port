@@ -17,7 +17,7 @@ const Main2: React.FC = () => {
                         <div className="w-28 h-28 md:w-40 md:h-40 xl:w-60 xl:h-60 aspect-auto relative rounded-full overflow-hidden object-cover drop-shadow-2xl">
                             <Image
                                 fill
-                                src={"https://i.namu.wiki/i/gTcJdHXhQgJ-oGTrAClJOykujLc_SL8kuhTLgZbnp5q4GM1cN0BxR9n-jMnp5XhDzBqijzXIv_99m4z8deEHOg.webp"}
+                                src={"https://avatars.githubusercontent.com/u/80664816?v=4"}
                                 alt=""
                                 className="object-cover"
                             />
