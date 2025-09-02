@@ -8,7 +8,7 @@ const Main2: React.FC = () => {
         <div className="w-full h-screen md:h-auto lg:h-screen flex sm:flex-row flex-col p-4 md:p-6 xl:p-10 gap-x-10 lg:gap-x-5 xl:gap-x-28 justify-start">
             <div className="flex flex-col w-auto items-start h-auto">
                 <div className="flex items-center gap-x-4 w-full">
-                    <h2 className="text-xl lg:text-2xl xl:text-3xl">MY INFO</h2>
+                    <h2 className="text-xl lg:text-2xl xl:text-3xl">소개</h2>
                     <div className="h-2 w-2 bg-black rounded-full"/>
                 </div>
                 <div className="flex flex-row sm:flex-col md:h-full w-full sm:w-auto justify-between mt-5 sm:mt-20 items-center">
@@ -22,7 +22,7 @@ const Main2: React.FC = () => {
                                 className="object-cover"
                             />
                         </div>
-                        <p className="text-black text-base sm:text-xl mt-4">Kim Junseo / 21</p>
+                        <p className="text-black text-base sm:text-xl mt-4">김준서 / 21</p>
                     </div>
                     {/* 정보 */}
                     <div className={infoClass}>
