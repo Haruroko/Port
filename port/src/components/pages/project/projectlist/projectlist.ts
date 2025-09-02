@@ -7,6 +7,7 @@ export const Projectlist = [
         image: "/logo/1.svg",
         video: "https://www.youtube.com/embed/PWyu0KTW6Cw",
         githubLink: "https://github.com/HealMeGitproject",
+        notionLink: "https://western-cobra-7d1.notion.site/Team-project-End-278479a16a4b4381bde5566a13cf6880?pvs=74"
     },
     {
         title: "Yuuri-iot (팀 프로젝트, 해커톤)",
@@ -15,6 +16,7 @@ export const Projectlist = [
         description: "IOT를 통한 스마트 쓰레기통 분리수거 앱",
         video: "https://www.youtube.com/embed/yy_z-oFuCP0",
         githubLink: "https://github.com/Yuuri-iot",
+        notionLink: "https://western-cobra-7d1.notion.site/AI-IOT-Team-Project-End-155976b1dab846108e340639bf8cdf5b?pvs=74"
     },
     {
         title: "Spotify 클론 코딩 (개인 프로젝트)",
@@ -22,6 +24,7 @@ export const Projectlist = [
         description: "스포티파이 홈페이지가 이쁘다는 생각이 들어서 따라 만들어 본 프로젝트",
         video: "/video/spotify.mp4",
         githubLink: "https://github.com/Haruroko/A-React/tree/main/spotify_clone",
+        notionLink: "https://www.notion.so/Spotify-Personal-Project-End-188a85ef5a854aaf9d5289e5a70e7cd6"
     },
     {
         title: "WELBATO (팀 프로젝트)",
@@ -30,6 +33,7 @@ export const Projectlist = [
         description: "360도 파노라마 맵을 바탕으로 학교의 시설을 안내하는 앱",
         image: "https://avatars.githubusercontent.com/u/103624654?s=200&v=4",
         githubLink: "https://github.com/JJOK-PROJECT",
+        notionLink: "https://western-cobra-7d1.notion.site/WELBATO-Team-Project-End-6a13a9b8d63a4aeb96d6e2744536b672?pvs=74"
     },
     {
         title: "BSSM.GG (팀 프로젝트)",
@@ -37,5 +41,6 @@ export const Projectlist = [
         people: "3",
         description: "인기게임 롤(League of Legends)의 학교 내 랭킹을 매겨주는 서비스",
         githubLink: "https://github.com/BSSM-GG",
+        notionLink: "https://western-cobra-7d1.notion.site/BSSM-GG-Team-Project-End-9a989039105b4a4d950761e1f829f54c?pvs=74"
     },
 ]

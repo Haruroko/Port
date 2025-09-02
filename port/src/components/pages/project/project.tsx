@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Projectlist } from "./projectlist/projectlist";
 export const Project = () => {
     return (
-        <div className="w-full h-auto flex sm:flex-row flex-col p-4 md:p-6 xl:p-10 gap-x-10 lg:gap-x-5 xl:gap-x-28 justify-start">
+        <div className="w-full h-auto flex sm:flex-row flex-col py-10 p-4 md:p-6 xl:p-10 gap-x-10 lg:gap-x-5 xl:gap-x-28 justify-start">
             <div className="flex flex-col w-auto items-start h-auto">
                 <div className="flex items-center gap-x-4 w-full">
                     <h2 className="text-xl lg:text-2xl xl:text-3xl">참여한 프로젝트</h2>
@@ -27,11 +27,11 @@ export const Project = () => {
                                     src={data.video} 
                                     className="rounded-lg min-w-[300px] min-h-[160px] aspect-video"
                                     title="YouTube video player"
-                                    frameBorder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
-                                />  
+                                />
                                 }
+                                <div className="flex items-center gap-x-2">
                                 <Image
                                     src={"/logo/github.png"}
                                     alt="GitHub"
@@ -40,6 +40,15 @@ export const Project = () => {
                                     className="rounded-full cursor-pointer mt-4 ml-4"
                                     onClick={() => window.open(data.githubLink, "_blank")}
                                 />
+                                <Image
+                                    src={"/logo/notion.png"}
+                                    alt="GitHub"
+                                    width={40}
+                                    height={40}
+                                    className="cursor-pointer mt-4.5 ml-4"
+                                    onClick={() => window.open(data.notionLink, "_blank")}
+                                />
+                                </div>
                             </div>
                         )
                     })}
