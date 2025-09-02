@@ -20,7 +20,7 @@ const Main1: React.FC = () => {
     }
   }, []);
     return(
-        <div className="flex flex-col items-center w-full h-screen bg-white p-4 md:p-6 lg:p-10 justify-between">
+        <div className="flex flex-col items-center w-full h-screen bg-white py-10 p-4 md:p-6 lg:p-10 justify-between">
             <div className={`flex md:flex-row flex-col w-full gap-y-5 gap-x-6 lg:gap-x-18 pt-10 md:pt-[120px] mx-auto items-center justify-center transition-all duration-700 ease-out ${show ? "opacity-100" : "opacity-0"}`}>
                 <div className="flex gap-x-5 lg:gap-x-[40px] max-w-[500px] w-full items-center justify-between">
                     <p className={textClass}>Responsibility</p>
