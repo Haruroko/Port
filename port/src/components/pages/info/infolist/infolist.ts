@@ -1,26 +1,26 @@
 export const Infolist = [
     {
-        category: "Education",
+        category: "학력 및 경력",
         list: [
             "부산소프트웨어마이스터고 졸업 (2021 ~ 2024)",
-            "잔다 재직 중 (2023 ~ 현재)"
+            "잔다 근무 (2023.09 ~ 2025.08)"
         ]
     },
     {
-        category: "Awards",
+        category: "수상 내역",
         list: [
             "체육 교과목 우수상 (2021)",
             "교내 겨울 데이터톤 장려상 (2022)"
         ]
     },
     {
-        category: "Certification",
+        category: "자격증",
         list: [
             "정보처리산업기사 취득"
         ]
     },
     {
-        category: "Activities",
+        category: "활동 내역",
         yearlist: [
             {
                 year: "2021",

@@ -1,0 +1,41 @@
+export const Projectlist = [
+    {
+        title: "건강하게 해조 (팀 프로젝트)",
+        period: "2021.04 ~ 2021.12",
+        people: "6",
+        description: "코로나 시기 활동이 줄어든 사람들을 위한 온라인 게임 & 운동 앱",
+        image: "/logo/1.svg",
+        video: "https://www.youtube.com/embed/PWyu0KTW6Cw",
+        githubLink: "https://github.com/HealMeGitproject",
+    },
+    {
+        title: "Yuuri-iot (팀 프로젝트, 해커톤)",
+        period: "2일 (해커톤)",
+        people: "4",
+        description: "IOT를 통한 스마트 쓰레기통 분리수거 앱",
+        video: "https://www.youtube.com/embed/yy_z-oFuCP0",
+        githubLink: "https://github.com/Yuuri-iot",
+    },
+    {
+        title: "Spotify 클론 코딩 (개인 프로젝트)",
+        period: "2022.12 ~ 2023.01",
+        description: "스포티파이 홈페이지가 이쁘다는 생각이 들어서 따라 만들어 본 프로젝트",
+        video: "/video/spotify.mp4",
+        githubLink: "https://github.com/Haruroko/A-React/tree/main/spotify_clone",
+    },
+    {
+        title: "WELBATO (팀 프로젝트)",
+        period: "2022.04 ~ 2022.11",
+        people: "4",
+        description: "360도 파노라마 맵을 바탕으로 학교의 시설을 안내하는 앱",
+        image: "https://avatars.githubusercontent.com/u/103624654?s=200&v=4",
+        githubLink: "https://github.com/JJOK-PROJECT",
+    },
+    {
+        title: "BSSM.GG (팀 프로젝트)",
+        period: "2023.03 ~ 2023.06",
+        people: "3",
+        description: "인기게임 롤(League of Legends)의 학교 내 랭킹을 매겨주는 서비스",
+        githubLink: "https://github.com/BSSM-GG",
+    },
+]
