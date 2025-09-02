@@ -11,7 +11,7 @@ export const Project = () => {
                     <div className="h-2 w-2 bg-black rounded-full" />
                 </div>
                 {/* 프로젝트 박스 */}
-                <div className="grid grid-cols-2 w-full gap-x-40 gap-y-20 mt-6 pl-4">
+                <div className="flex flex-col lg:grid grid-cols-2 w-full gap-x-40 gap-y-20 mt-6 pl-4">
                     {Projectlist.map((data: any, index: any) => {
                         return (
                             <div key={index} className="flex flex-col w-full gap-y-2">
@@ -25,9 +25,7 @@ export const Project = () => {
                                 <p className="text-sm lg:text-base xl:text-lg"> · 간단 설명 : {data.description}</p>
                                 {data.video && <iframe 
                                     src={data.video} 
-                                    width={600} 
-                                    height={360} 
-                                    className="rounded-lg"
+                                    className="rounded-lg min-w-[300px] min-h-[160px] aspect-video"
                                     title="YouTube video player"
                                     frameBorder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
