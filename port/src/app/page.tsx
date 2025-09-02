@@ -2,6 +2,7 @@ import Main1 from "@/components/pages/main/main";
 import Main2 from "@/components/pages/info/info";
 import Image from "next/image";
 import Project from "@/components/pages/project/project";
+import Service from "@/components/pages/service/service";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Main1/>
       <Main2/>
       <Project/>
+      <Service/>
     </div>
   );
 }

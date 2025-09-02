@@ -13,7 +13,7 @@ const Main2: React.FC = () => {
                 </div>
                 <div className="flex flex-row sm:flex-col md:h-full w-full sm:w-auto justify-between mt-5 sm:mt-20 items-center">
                     {/* 프로필 */}
-                    <div className="flex flex-col items-start sm:items-center w-auto">
+                    <div className="flex flex-col items-center w-auto">
                         <div className="w-28 h-28 md:w-40 md:h-40 xl:w-60 xl:h-60 aspect-auto relative rounded-full overflow-hidden object-cover drop-shadow-2xl">
                             <Image
                                 fill
@@ -29,7 +29,7 @@ const Main2: React.FC = () => {
                         <p>Phone : 010-2162-1905</p>
                         <p>Mail : digyrh456789@gmail.com</p>
                         <p>Velog : @digyrh456789</p>
-                        <p>GitHub : Haruroko</p>
+                        <a>GitHub : Haruroko</a>
                     </div>
                 </div>
             </div>
